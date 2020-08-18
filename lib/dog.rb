@@ -19,3 +19,7 @@ def self.print_all
 end
 
 end
+
+fifi = Dog.new("fifi")
+fido = Dog.new("fido")
+Dog.print_all 
