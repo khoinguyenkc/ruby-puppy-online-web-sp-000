@@ -12,7 +12,7 @@ attr_accessor :name
     @@all << self #push the object into the all array
   end
 
-    
+
   def self.all
     @@all
   end
