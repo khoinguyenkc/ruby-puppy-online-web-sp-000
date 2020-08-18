@@ -5,9 +5,12 @@ attr_accessor :name
 
 def initialize(name)
   @name = name
-  @@all << self #push the object into the all array
+  self.save() #self refers to the instance
 end
 
+def save #an INSTANCE method
+    @@all << self #push the object into the all array
+  end
 def self.all
   @@all
 end
