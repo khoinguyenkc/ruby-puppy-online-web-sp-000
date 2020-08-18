@@ -10,7 +10,7 @@ attr_accessor :name
   end
 
   def save #an INSTANCE method
-    @@all << self.name #push the object into the all array
+    @@all << self #push the object into the all array
   end
 
 
@@ -20,7 +20,7 @@ attr_accessor :name
 
   def self.print_all
     @@all.each do | dogobject |
-      puts dogobject
+      puts dogobject.name
     end
   end
 
