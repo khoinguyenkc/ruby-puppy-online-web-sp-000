@@ -24,3 +24,4 @@ fifi = Dog.new("fifi")
 fido = Dog.new("fido")
 Dog.print_all
 print Dog.all
+print fido.name
