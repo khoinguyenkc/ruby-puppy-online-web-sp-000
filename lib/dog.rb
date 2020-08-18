@@ -14,7 +14,7 @@ end
 
 def self.print_all
   @@all.each do | dogobject |
-    dogobject.name
+    puts dogobject.name
   end
 end
 
@@ -22,4 +22,4 @@ end
 
 fifi = Dog.new("fifi")
 fido = Dog.new("fido")
-Dog.print_all 
+Dog.print_all
