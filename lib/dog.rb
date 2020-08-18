@@ -10,8 +10,7 @@ attr_accessor :name
   end
 
   def save #an INSTANCE method
-    @@all << self #push the object into the all array
-    binding.pry
+    @@all << self.name #push the object into the all array
   end
 
 
