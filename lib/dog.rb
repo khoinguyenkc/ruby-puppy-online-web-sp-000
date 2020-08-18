@@ -1,4 +1,5 @@
 # Add your code here
+require 'pry'
 class Dog
 attr_accessor :name
 @@all = []
@@ -10,6 +11,7 @@ attr_accessor :name
 
   def save #an INSTANCE method
     @@all << self #push the object into the all array
+    binding.pry
   end
 
 
@@ -29,4 +31,3 @@ fifi = Dog.new("fifi")
 fido = Dog.new("fido")
 Dog.print_all
 print Dog.all
-print fido.name
