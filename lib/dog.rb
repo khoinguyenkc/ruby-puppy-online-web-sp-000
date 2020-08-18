@@ -3,23 +3,25 @@ class Dog
 attr_accessor :name
 @@all = []
 
-def initialize(name)
-  @name = name
-  self.save() #self refers to the instance
-end
+  def initialize(name)
+    @name = name
+    self.save #self refers to the instance
+  end
 
-def save #an INSTANCE method
+  def save #an INSTANCE method
     @@all << self #push the object into the all array
   end
-def self.all
-  @@all
-end
 
-def self.print_all
-  @@all.each do | dogobject |
-    puts dogobject.name
+    
+  def self.all
+    @@all
   end
-end
+
+  def self.print_all
+    @@all.each do | dogobject |
+      puts dogobject.name
+    end
+  end
 
 end
 
